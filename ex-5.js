@@ -1,5 +1,10 @@
-function sum() {
+function sum(...args) {
+  let sum = 0
   // Start coding here !
+  for(let arg of args) {
+    sum += arg
+  }
+  return sum
 }
 
 let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);
